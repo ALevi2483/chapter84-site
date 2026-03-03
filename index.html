@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SFA Chapter 84 | Hampton Roads, VA</title>
+  <meta name="description" content="Special Forces Association Chapter 84 in Hampton Roads, Virginia." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="/">
+        <span class="brand-top">SFA Chapter 84</span>
+        <span class="brand-sub">Hampton Roads, VA</span>
+      </a>
+
+      <button class="nav-toggle" aria-controls="site-nav" aria-expanded="false">
+        Menu
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#events">Events</a>
+        <a href="/Gallery/">Gallery</a>
+        <a href="/Documents/">Documents</a>
+        <a href="/Contacts/">Contact</a>
+        <a class="btn" href="#join">Join</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1>Special Forces Association Chapter 84</h1>
+          <p class="lead">
+            A 501(c)(3) veteran organization supporting the Special Forces community and the Hampton Roads region.
+          </p>
+          <div class="cta-row">
+            <a class="btn" href="/Contacts/">Contact us</a>
+            <a class="btn btn-ghost" href="#events">See events</a>
+          </div>
+          <ul class="quick-points">
+            <li>Brotherhood and community support</li>
+            <li>JROTC and ROTC engagement</li>
+            <li>Local outreach and veteran events</li>
+          </ul>
+        </div>
+
+        <div class="hero-card" role="complementary" aria-label="Quick info">
+          <h2 class="card-title">Quick info</h2>
+          <p><strong>Region:</strong> Region III Mid-Atlantic</p>
+          <p><strong>Location:</strong> Hampton Roads, Virginia</p>
+          <p><strong>Email:</strong> <a href="mailto:yourchapteremail@domain.com">yourchapteremail@domain.com</a></p>
+          <p><strong>Donate:</strong> <a href="#join">Support the chapter</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container two-col">
+        <div>
+          <h2>Who we are</h2>
+          <p>
+            Chapter 84 is an active Special Forces Association chapter in Hampton Roads, Virginia.
+            We support our members, honor our fallen, and strengthen our community ties.
+          </p>
+        </div>
+        <div>
+          <h2>What we do</h2>
+          <ul class="bullets">
+            <li>Monthly meetups and dinners</li>
+            <li>Support to JROTC and ROTC programs</li>
+            <li>Participation in regional events and ceremonies</li>
+            <li>Networking and mutual support for members</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="events" class="section section-alt">
+      <div class="container">
+        <h2>Upcoming events</h2>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Monthly meetup</h3>
+            <p class="meta">Date: TBD • Location: TBD</p>
+            <p>Short description of the event.</p>
+          </article>
+
+          <article class="card">
+            <h3>ROTC awards support</h3>
+            <p class="meta">Date: TBD • Location: TBD</p>
+            <p>Short description of the event.</p>
+          </article>
+
+          <article class="card">
+            <h3>Community outreach</h3>
+            <p class="meta">Date: TBD • Location: TBD</p>
+            <p>Short description of the event.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="join" class="section">
+      <div class="container join">
+        <h2>Join or support</h2>
+        <p>
+          Want to get involved, sponsor, or donate? Use the contact page and we will follow up.
+        </p>
+        <div class="cta-row">
+          <a class="btn" href="/Contacts/">Contact for membership</a>
+          <a class="btn btn-ghost" href="/Documents/">View documents</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>SFA Chapter 84</strong>
+        <p class="muted">Hampton Roads, VA</p>
+      </div>
+      <div>
+        <a href="/Contacts/">Contact</a><br />
+        <a href="/Documents/">Documents</a><br />
+        <a href="/Gallery/">Gallery</a>
+      </div>
+      <div class="muted">
+        <p>© <span id="year"></span> SFA Chapter 84</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.querySelector(".nav-toggle");
+    const nav = document.querySelector("#site-nav");
+    btn.addEventListener("click", () => {
+      const open = btn.getAttribute("aria-expanded") === "true";
+      btn.setAttribute("aria-expanded", String(!open));
+      nav.classList.toggle("open", !open);
+    });
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
